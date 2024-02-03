@@ -11,7 +11,6 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<PasswordsDbContext>
 (options =>
 options.UseSqlite(builder.Configuration.GetConnectionString("localDBConnection")));
-builder.Configuration.AddJsonFile("appsettings.json");
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

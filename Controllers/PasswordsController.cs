@@ -33,9 +33,7 @@ namespace PasswordManager.Controllers
             if (passwordItem == null)
                 return BadRequest();
 
-
             var encryptedPassword = encryptPasswordObj.EncryptPassword(passwordItem.UserPassword);
-
             var addPassword = new Password
             {
                 UserName = passwordItem.UserName,
@@ -60,7 +58,7 @@ namespace PasswordManager.Controllers
 
             if (passwordItem == null)
             {
-                return NotFound(); //404 
+                return NotFound();
             }
 
             if (isDecrypted)
@@ -85,7 +83,7 @@ namespace PasswordManager.Controllers
             var existingPassword = await _dbContext.PasswordItem.FindAsync(id);
             if (existingPassword == null)
             {
-                return NotFound(); //404 
+                return NotFound();
             }
 
             existingPassword.UserName = password.UserName;
