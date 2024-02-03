@@ -11,6 +11,7 @@ namespace PasswordManager.Controllers
     public class PasswordsController : ControllerBase
     {
         private readonly PasswordsDbContext _dbContext;
+        private EncryptionService encryptPasswordObj = new EncryptionService();
 
         public PasswordsController(PasswordsDbContext passwordsDbContext)
         {
@@ -27,24 +28,24 @@ namespace PasswordManager.Controllers
 
         //Create password
         [HttpPost]
-        public async Task<IActionResult> CreatePassword([FromBody] Password password)
+        public async Task<IActionResult> CreatePassword([FromBody] Password passwordItem)
         {
-            if (password == null)
+            if (passwordItem == null)
                 return BadRequest();
 
-            EncryptionService encryptPassword = new EncryptionService();
-            var encryptedPassword = encryptPassword.EncryptPassword(password.UserPassword);
+
+            var encryptedPassword = encryptPasswordObj.EncryptPassword(passwordItem.UserPassword);
 
             var addPassword = new Password
             {
-                UserName = password.UserName,
-                Category = password.Category,
-                App = password.App,
+                UserName = passwordItem.UserName,
+                Category = passwordItem.Category,
+                App = passwordItem.App,
                 UserPassword = encryptedPassword
             };
             _dbContext.Add(addPassword);
             await _dbContext.SaveChangesAsync();
-            return CreatedAtAction("CreatePassword", new { id = password.Id }, password);
+            return CreatedAtAction("CreatePassword", new { id = passwordItem.Id }, passwordItem);
         }
 
         //Get One Password
@@ -65,7 +66,7 @@ namespace PasswordManager.Controllers
             if (isDecrypted)
             {
                 var encryptedPassword = passwordItem.UserPassword;
-                EncryptionService encryptPasswordObj = new EncryptionService();
+                // EncryptionService encryptPasswordObj = new EncryptionService();
                 var decryptedPassword = encryptPasswordObj.DecryptPassword(encryptedPassword);
                 passwordItem.UserPassword = decryptedPassword;
                 return Ok(passwordItem);
@@ -87,8 +88,6 @@ namespace PasswordManager.Controllers
                 return NotFound(); //404 
             }
 
-            EncryptionService encryptPasswordObj = new EncryptionService();
-
             existingPassword.UserName = password.UserName;
             existingPassword.App = password.App;
             existingPassword.Category = password.Category;
@@ -99,6 +98,20 @@ namespace PasswordManager.Controllers
         }
 
         //Delete a Password store item
+        [HttpDelete]
+        [Route("{id:int}")]
+        public async Task<IActionResult> DeletePassword([FromRoute] int id)
+        {
+            if (id == null)
+                return BadRequest();
+
+            var existingPassword = await _dbContext.PasswordItem.FindAsync(id);
+            if (existingPassword == null)
+                return NotFound();
+            _dbContext.PasswordItem.Remove(existingPassword);
+            await _dbContext.SaveChangesAsync();
+            return NoContent();
+        }
 
     }
 }
