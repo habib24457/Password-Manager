@@ -46,7 +46,7 @@ namespace PasswordManager.Controllers
             return CreatedAtAction("CreatePassword", new { id = passwordItem.Id }, passwordItem);
         }
 
-        //Get One Password
+        //Get One Password decrypted or encrypted
         [HttpGet]
         [Route("{id:int}/{isDecrypted}")]
         public async Task<IActionResult> GetOneById([FromRoute] int id, bool isDecrypted)
@@ -64,7 +64,6 @@ namespace PasswordManager.Controllers
             if (isDecrypted)
             {
                 var encryptedPassword = passwordItem.UserPassword;
-                // EncryptionService encryptPasswordObj = new EncryptionService();
                 var decryptedPassword = encryptPasswordObj.DecryptPassword(encryptedPassword);
                 passwordItem.UserPassword = decryptedPassword;
                 return Ok(passwordItem);

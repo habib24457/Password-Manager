@@ -4,6 +4,7 @@ namespace PasswordManager.Service
 {
     public class EncryptionService
     {
+        /*This class is responsible for encrypting and decrypting the password*/
         public string EncryptPassword(string plainTextPassword)
         {
             if (string.IsNullOrEmpty(plainTextPassword))
