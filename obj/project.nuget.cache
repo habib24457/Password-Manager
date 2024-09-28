@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JneuIfl23Q2Pg503qxUZX/2EiYkw3oHM0vtlvY7fVqGp3dLT8Vnu5UT9Wsrj3EFENxqHqCShpPh9LoZLKZo/4Q==",
+  "dgSpecHash": "1k29zFZo+hf/pe6/4CgRozo79sx65DEyompTr07HgBSk0yWhttgpkUk67sbOGQezg9ZGPXtEFc/cjUVez2ij3A==",
   "success": true,
-  "projectFilePath": "/Users/habiburrahman/Projects/PasswordManager/PasswordManager/PasswordManager.csproj",
+  "projectFilePath": "/Users/habiburrahman/Web-project-24/Password_manager_project/PasswordManager.csproj",
   "expectedPackageFiles": [
     "/Users/habiburrahman/.nuget/packages/dotenv/0.0.1.1/dotenv.0.0.1.1.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
@@ -50,7 +50,17 @@
     "/Users/habiburrahman/.nuget/packages/system.io.abstractions/1.4.0.86/system.io.abstractions.1.4.0.86.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/habiburrahman/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
+    "/Users/habiburrahman/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit/2.9.2/xunit.2.9.2.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit.core/2.9.2/xunit.core.2.9.2.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.14/microsoft.netcore.app.host.osx-arm64.7.0.14.nupkg.sha512"
   ],
   "logs": [
     {
