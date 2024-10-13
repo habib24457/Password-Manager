@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1k29zFZo+hf/pe6/4CgRozo79sx65DEyompTr07HgBSk0yWhttgpkUk67sbOGQezg9ZGPXtEFc/cjUVez2ij3A==",
+  "dgSpecHash": "PXaM+14ltaUkmRgXSiTlem8uFBzfQMylns7wKQmPtfN1TM5i454WIZNVNHWSELvF96EQ/lmfLUYI6xXN9rUvpA==",
   "success": true,
-  "projectFilePath": "/Users/habiburrahman/Web-project-24/Password_manager_project/PasswordManager.csproj",
+  "projectFilePath": "/Users/habiburrahman/PasswordManager.Updated/src/PasswordManager/PasswordManager.csproj",
   "expectedPackageFiles": [
+    "/Users/habiburrahman/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/dotenv/0.0.1.1/dotenv.0.0.1.1.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
@@ -36,6 +37,7 @@
     "/Users/habiburrahman/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/nsubstitute/5.1.0/nsubstitute.5.1.0.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/simplejson/0.38.0/simplejson.0.38.0.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.2/sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/sqlitepclraw.core/2.1.2/sqlitepclraw.core.2.1.2.nupkg.sha512",
@@ -47,6 +49,7 @@
     "/Users/habiburrahman/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
+    "/Users/habiburrahman/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.io.abstractions/1.4.0.86/system.io.abstractions.1.4.0.86.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/habiburrahman/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",

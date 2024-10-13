@@ -18,7 +18,6 @@ namespace PasswordManager.Controllers
             _dbContext = passwordsDbContext;
         }
 
-        //Get All Passwords
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -26,7 +25,6 @@ namespace PasswordManager.Controllers
             return Ok(passwords);
         }
 
-        //Create password
         [HttpPost]
         public async Task<IActionResult> CreatePassword([FromBody] Password passwordItem)
         {
