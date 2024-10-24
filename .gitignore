@@ -1,0 +1,15 @@
+# Ignore build outputs
+bin/
+obj/
+# Ignore obj/Debug/net7.0 and any similar version directories
+obj/Debug/net*/ 
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore logs
+*.log
+
+# Ignore obj/Debug/net* directories
+obj/Debug/net*/
